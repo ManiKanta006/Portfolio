@@ -29,6 +29,7 @@ theme.addEventListener("click",( ) => {
     document.querySelector("#contact-section").style.color = "black";
     document.querySelector(".contact-cont").style.boxShadow = "rgba(0, 0, 0, 0.74) 0px 5px 15px";
     document.querySelector(".contact-cont").style.backgroundColor = "rgba(255, 255, 255, 0.61)";
+    document.body.style.backgroundColor = "#fff6ea";
     
     
 })
@@ -41,7 +42,6 @@ theme.addEventListener("dblclick",( ) => {
     document.querySelector(".abt-me-cont").style.backgroundColor ="rgba(0, 0, 0, 0.61)";
     document.querySelector(".abt-me-cont").style.boxShadow = "rgba(255, 255, 255, 0.74) 0px 5px 15px";
     document.querySelector("#skills-section").style.color = "white";
-    document.querySelector("#skills-section").style.boxShadow = "rgba(255, 255, 255, 0.74) 0px 5px 15px";
     document.querySelector(".skill-cont").style.backgroundColor = "rgba(0, 0, 0, 0.61)";
     for (let i = 0; i < skill.length; i++) {
         skill[i].style.backgroundColor = "rgb(0, 0, 0)";        
@@ -61,4 +61,5 @@ theme.addEventListener("dblclick",( ) => {
     document.querySelector("#contact-section").style.color = "white";
     document.querySelector(".contact-cont").style.boxShadow = "rgba(255, 255, 255, 0.74) 0px 5px 15px";
     document.querySelector(".contact-cont").style.backgroundColor = "rgba(0, 0, 0, 0.61)";
+    document.body.style.backgroundColor = "#121212";
 })
