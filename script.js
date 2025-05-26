@@ -1,5 +1,6 @@
 var theme = document.querySelector(".theme");
 var skill = document.querySelectorAll(".skill");
+var project = document.querySelectorAll(".project-card");
 theme.addEventListener("click",( ) => {
     document.querySelector(".theme-icon").setAttribute("src", "/icons/sun-svgrepo-com.svg");
     document.querySelector(".tool-tip").innerHTML = "Double Click for Dark Mode";
@@ -13,10 +14,18 @@ theme.addEventListener("click",( ) => {
     for (let i = 0; i < skill.length; i++) {
         skill[i].style.backgroundColor = "white";        
     }
-    document.querySelectorAll(".skill-icon")[8].setAttribute("src","icons/icons8-express-js.svg");
-    document.querySelectorAll(".skill-icon")[6].setAttribute("src","icons/icons8-nodejs.svg");
-    document.querySelectorAll(".skill-icon")[7].setAttribute("src","icons/mongodb-svgrepo-com.svg");
-    document.querySelectorAll(".skill-icon")[5].setAttribute("src","icons/react-logo-svgrepo-com.svg");
+    document.querySelectorAll(".skill-icon")[9].setAttribute("src","icons/icons8-express-js.svg");
+    document.querySelectorAll(".skill-icon")[7].setAttribute("src","icons/icons8-nodejs.svg");
+    document.querySelectorAll(".skill-icon")[8].setAttribute("src","icons/mongodb-svgrepo-com.svg");
+    document.querySelectorAll(".skill-icon")[6].setAttribute("src","icons/react-logo-svgrepo-com.svg");
+    document.querySelector("#projects-section").style.color = "black";
+    for(var j = 0; j < project.length;j++){
+        project[j].style.backgroundColor = "white"
+    }
+    document.querySelector(".project-cont").style.backgroundColor = "rgba(255, 255, 255, 0.61)";
+    document.querySelectorAll(".project-img")[0].setAttribute("src","icons/contact-mobile-svgrepo-com.svg");
+    document.querySelectorAll(".project-img")[1].setAttribute("src","icons/person-fill-svgrepo-com.svg");
+    
 })
 theme.addEventListener("dblclick",( ) => {
     document.querySelector(".theme-icon").setAttribute("src", "/icons/moon-svgrepo-com.svg");
@@ -32,8 +41,15 @@ theme.addEventListener("dblclick",( ) => {
     for (let i = 0; i < skill.length; i++) {
         skill[i].style.backgroundColor = "rgb(49, 49, 49)";        
     }
-    document.querySelectorAll(".skill-icon")[8].setAttribute("src","icons/icons8-express-js-dark.svg");
-    document.querySelectorAll(".skill-icon")[6].setAttribute("src","icons/icons8-nodejs-dark.svg");
-    document.querySelectorAll(".skill-icon")[7].setAttribute("src","icons/mongodb-svgrepo-com-dark.svg");
-    document.querySelectorAll(".skill-icon")[5].setAttribute("src","icons/react-logo-svgrepo-com-dark.svg");
+    document.querySelectorAll(".skill-icon")[9].setAttribute("src","icons/icons8-express-js-dark.svg");
+    document.querySelectorAll(".skill-icon")[7].setAttribute("src","icons/icons8-nodejs-dark.svg");
+    document.querySelectorAll(".skill-icon")[8].setAttribute("src","icons/mongodb-svgrepo-com-dark.svg");
+    document.querySelectorAll(".skill-icon")[6].setAttribute("src","icons/react-logo-svgrepo-com-dark.svg");
+    document.querySelector("#projects-section").style.color = "white";
+    for(var j = 0; j < project.length;j++){
+        project[j].style.backgroundColor = "black"
+    }
+    document.querySelector(".project-cont").style.backgroundColor = "rgba(0, 0, 0, 0.61)";
+    document.querySelectorAll(".project-img")[0].setAttribute("src","icons/contact-mobile-svgrepo-com-light.svg");
+    document.querySelectorAll(".project-img")[1].setAttribute("src","icons/person-fill-svgrepo-com-light.svg");
 })
